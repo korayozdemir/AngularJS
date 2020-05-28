@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script src="~/js/Angular.js"></script>
+
+@*<script>
+        function LabelWrite() {
+            var deger = document.getElementById("txtName").value;
+            document.getElementById("lblName").innerHTML = deger;
+        }
+    </script>*@
+
+<div class="text-center" ng-app="" ng-init="Adi = 'AHmet'">
+
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+
+    <p>Name : <input type="text" ng-model="name" /></p>
+    <h3>Hello : {{name}}</h3>
+    <h3>Adı : {{Adi}}</h3>
+    <h3>Sonuç : {{5+10}}</h3>
+
+    @*<p>Name : <input type="text" id="txtName" onkeyup="LabelWrite()" /></p>
+        <h3>Hello : <span id="lblName"></span></h3>*@
+</div>
+
